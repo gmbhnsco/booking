@@ -8,9 +8,9 @@ namespace _0_Framework.Application
 {
     public class ApplicationMessages
     {
-        public const string DouplicatedRecord = "امکان ثبت رکورد تکراری وجود ندارد، لطفا مجددا تلاش فرمائید";
-        public const string RecordNotFound = "رکورد با اطلاعات درخواست شده یافت نشد، لطفا مجددا تلاش فرمائید";
-        public const string PasswordNotMatch = "پسورد و تکرار آن با هم مطابقت ندارند";
-        public const string WrongUserPasss = "نام کاربری یا کلمه عبور اشتباه است";
+        public const string DouplicatedRecord = "It is not possible to register a duplicate record, please try again";
+        public const string RecordNotFound = "The record with the requested information was not found, please try again";
+        public const string PasswordNotMatch = "The password and its repetition do not match";
+        public const string WrongUserPasss = "The username or password is incorrect";
     }
 }
