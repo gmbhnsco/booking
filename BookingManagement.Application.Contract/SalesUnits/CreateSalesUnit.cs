@@ -16,13 +16,5 @@ namespace BookingManagement.Application.Contract.SalesUnits
         public string Country { get; set; }
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public string Currency { get; set; }
-        [Required(ErrorMessage = ValidationMessages.IsRequired)]
-        public string Keywords { get; set; }
-
-        [Required(ErrorMessage = ValidationMessages.IsRequired)]
-        public string MetaDescription { get; set; }
-
-        [Required(ErrorMessage = ValidationMessages.IsRequired)]
-        public string Slug { get; set; }
     }
 }

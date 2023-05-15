@@ -25,8 +25,7 @@ namespace BookingManagement.Application
             {
                 operation.Failed(ApplicationMessages.DouplicatedRecord);
             }
-            var slug = command.Slug.Slugify();
-            var salesUnit = new SalesUnit(command.Name, command.Country, command.Currency,command.Keywords,command.MetaDescription,slug);
+            var salesUnit = new SalesUnit(command.Name, command.Country, command.Currency);
             _salesUnitsRepository.Create(salesUnit);
             _salesUnitsRepository.SaveChanges();
             return operation.Succedded();
@@ -46,8 +45,7 @@ namespace BookingManagement.Application
                 return operation.Failed(ApplicationMessages.DouplicatedRecord);
 
             }
-            var slug = command.Slug.Slugify();
-            saleUnit.Edit(command.Name, command.Country, command.Currency,command.Keywords,command.MetaDescription,slug);
+            saleUnit.Edit(command.Name, command.Country, command.Currency);
             _salesUnitsRepository.SaveChanges();
             return operation.Succedded();
         }

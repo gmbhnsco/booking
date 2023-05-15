@@ -23,32 +23,22 @@ namespace BookingManagement.Domain.SalesUnitsAgg
         //public string PictureTitle { get; private set; }
 
         //these three property is assign and set just for seo
-        public string Keywords { get; private set; }
-        public string MetaDescription { get; private set; }
-        public string Slug { get; private set; }
+        //public string Keywords { get; private set; }
+        //public string MetaDescription { get; private set; }
+        //public string Slug { get; private set; }
 
-        public SalesUnit(string name, string country, string currency,
-            string keywords, string metaDescription,
-            string slug)
+        public SalesUnit(string name, string country, string currency)
         {
             Name = name;
             Country = country;
             Currency = currency;
-            Keywords = keywords;
-            MetaDescription = metaDescription;
-            Slug = slug;
         }
 
-        public void Edit(string name, string country, string currency,
-            string keywords, string metaDescription,
-            string slug)
+        public void Edit(string name, string country, string currency)
         {
             Name = name;
             Country = country;
             Currency = currency;
-            Keywords = keywords;
-            MetaDescription = metaDescription;
-            Slug = slug;
         }
     }
 }
