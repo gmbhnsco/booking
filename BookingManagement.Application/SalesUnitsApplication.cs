@@ -55,6 +55,19 @@ namespace BookingManagement.Application
             return _salesUnitsRepository.GetDetails(id);
         }
 
+        public OperationResult Remove(long id)
+        {
+            var operation = new OperationResult();
+            var salesUnit = _salesUnitsRepository.Get(id);
+            if (salesUnit == null)
+                return operation.Failed(ApplicationMessages.RecordNotFound);
+
+            salesUnit.Removed();
+
+            _salesUnitsRepository.SaveChanges();
+            return operation.Succedded();
+        }
+
         public List<SalesUnitViewModel> Search(SalesUnitSearchModel searchModel)
         {
             throw new NotImplementedException();

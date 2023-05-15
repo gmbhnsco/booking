@@ -13,5 +13,6 @@ namespace BookingManagement.Application.Contract.SalesUnits
         OperationResult Edit(EditSalesUnit command);
         EditSalesUnit GetDetails(long id);
         List<SalesUnitViewModel> Search(SalesUnitSearchModel searchModel);
+        OperationResult Remove(long id);
     }
 }

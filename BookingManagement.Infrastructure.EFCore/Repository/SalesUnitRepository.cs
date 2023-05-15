@@ -20,12 +20,33 @@ namespace BookingManagement.Infrastructure.EFCore.Repository
 
         public EditSalesUnit GetDetails(long id)
         {
-            throw new NotImplementedException();
+            return _context.SalesUnits.Select(x => new EditSalesUnit {
+            Id=x.Id,
+            Name=x.Name,
+            Country=x.Country,
+            Currency = x.Currency
+            }).FirstOrDefault(x => x.Id == id);
         }
 
         public List<SalesUnitViewModel> Search(SalesUnitSearchModel searchModel)
         {
-            throw new NotImplementedException();
+            var query = _context.SalesUnits.Select(x => new SalesUnitViewModel {
+            Id=x.Id,
+            Name=x.Name,
+            Country=x.Country,
+            Currency=x.Currency,
+            IsRemoved = x.IsRemoved
+            });
+            if (!string.IsNullOrWhiteSpace(searchModel.Name))
+                query = query.Where(x => x.Name.Contains(searchModel.Name));
+
+            if (!string.IsNullOrWhiteSpace(searchModel.Currency))
+                query = query.Where(x => x.Currency.Contains(searchModel.Currency));
+
+            if (!string.IsNullOrWhiteSpace(searchModel.Country))
+                query = query.Where(x => x.Country.Contains(searchModel.Country));
+
+            return query.OrderByDescending(x => x.Id).Where(x => x.IsRemoved).ToList();
         }
     }
 }

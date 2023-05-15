@@ -13,6 +13,7 @@ namespace BookingManagement.Domain.SalesUnitsAgg
         public string Name { get;private set; }
         public string Country { get; private set; }
         public string Currency { get; private set; }
+        public bool IsRemoved { get; set; }
 
         // these three property didnot want from me but
         // are nessessary in real world 
@@ -32,6 +33,7 @@ namespace BookingManagement.Domain.SalesUnitsAgg
             Name = name;
             Country = country;
             Currency = currency;
+            IsRemoved = false;
         }
 
         public void Edit(string name, string country, string currency)
@@ -39,6 +41,10 @@ namespace BookingManagement.Domain.SalesUnitsAgg
             Name = name;
             Country = country;
             Currency = currency;
+        }
+        public void Removed()
+        {
+            IsRemoved = true;
         }
     }
 }

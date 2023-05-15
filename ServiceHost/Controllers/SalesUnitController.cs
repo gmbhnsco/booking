@@ -21,9 +21,9 @@ namespace ServiceHost.Controllers
         }
         // GET: api/<SalesUnitController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<SalesUnit> Get()
         {
-            return new string[] { "value1", "value2" };
+            return _salesUnitApplication.ge
         }
 
         // GET api/<SalesUnitController>/5
@@ -52,6 +52,7 @@ namespace ServiceHost.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            _salesUnitApplication.Remove(id);
         }
     }
 }
