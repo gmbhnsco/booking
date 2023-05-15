@@ -21,9 +21,9 @@ namespace ServiceHost.Controllers
         }
         // GET: api/<SalesUnitController>
         [HttpGet]
-        public IEnumerable<SalesUnit> Get()
+        public IEnumerable<SalesUnitViewModel> Get()
         {
-            return _salesUnitApplication.ge
+            return _salesUnitApplication.GetAll();
         }
 
         // GET api/<SalesUnitController>/5

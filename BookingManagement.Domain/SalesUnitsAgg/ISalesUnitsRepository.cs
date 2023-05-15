@@ -12,5 +12,6 @@ namespace BookingManagement.Domain.SalesUnitsAgg
     {
         EditSalesUnit GetDetails(long id);
         List<SalesUnitViewModel> Search(SalesUnitSearchModel searchModel);
+        List<SalesUnitViewModel> GetAll();
     }
 }

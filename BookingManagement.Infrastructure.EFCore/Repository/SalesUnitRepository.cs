@@ -18,6 +18,17 @@ namespace BookingManagement.Infrastructure.EFCore.Repository
             _context = context;
         }
 
+        public List<SalesUnitViewModel> GetAll()
+        {
+            return _context.SalesUnits.Select(x => new SalesUnitViewModel
+            {
+                Id = x.Id,
+                Name = x.Name,
+                Country = x.Country,
+                Currency = x.Currency
+            }).Where(x => x.IsRemoved).ToList();
+        }
+
         public EditSalesUnit GetDetails(long id)
         {
             return _context.SalesUnits.Select(x => new EditSalesUnit {

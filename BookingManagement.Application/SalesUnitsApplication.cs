@@ -50,6 +50,11 @@ namespace BookingManagement.Application
             return operation.Succedded();
         }
 
+        public List<SalesUnitViewModel> GetAll()
+        {
+            return _salesUnitsRepository.GetAll();
+        }
+
         public EditSalesUnit GetDetails(long id)
         {
             return _salesUnitsRepository.GetDetails(id);
@@ -70,7 +75,7 @@ namespace BookingManagement.Application
 
         public List<SalesUnitViewModel> Search(SalesUnitSearchModel searchModel)
         {
-            throw new NotImplementedException();
+            return _salesUnitsRepository.Search(searchModel);
         }
     }
 }
