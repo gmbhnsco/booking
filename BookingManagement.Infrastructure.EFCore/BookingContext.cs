@@ -1,4 +1,5 @@
-﻿using BookingManagement.Infrastructure.EFCore.Mapping;
+﻿using BookingManagement.Domain.SalesUnitsAgg;
+using BookingManagement.Infrastructure.EFCore.Mapping;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ namespace BookingManagement.Infrastructure.EFCore
 {
     public class BookingContext : DbContext
     {
+        public DbSet<SalesUnit> SalesUnits { get; set; }
         public BookingContext(DbContextOptions<BookingContext> options) : base(options)
         {
         }
