@@ -1,0 +1,5 @@
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Infrastructure.EFCore\obj\Debug\net5.0\BookingManagement.Infrastructure.EFCore.csproj.AssemblyReference.cache
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Infrastructure.EFCore\obj\Debug\net5.0\BookingManagement.Infrastructure.EFCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Infrastructure.EFCore\obj\Debug\net5.0\BookingManagement.Infrastructure.EFCore.AssemblyInfoInputs.cache
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Infrastructure.EFCore\obj\Debug\net5.0\BookingManagement.Infrastructure.EFCore.AssemblyInfo.cs
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Infrastructure.EFCore\obj\Debug\net5.0\BookingManagement.Infrastructure.EFCore.csproj.CoreCompileInputs.cache

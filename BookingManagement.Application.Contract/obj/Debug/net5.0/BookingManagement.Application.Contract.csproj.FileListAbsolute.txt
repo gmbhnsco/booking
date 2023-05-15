@@ -1,0 +1,5 @@
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application.Contract\obj\Debug\net5.0\BookingManagement.Application.Contract.csproj.AssemblyReference.cache
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application.Contract\obj\Debug\net5.0\BookingManagement.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application.Contract\obj\Debug\net5.0\BookingManagement.Application.Contract.AssemblyInfoInputs.cache
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application.Contract\obj\Debug\net5.0\BookingManagement.Application.Contract.AssemblyInfo.cs
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application.Contract\obj\Debug\net5.0\BookingManagement.Application.Contract.csproj.CoreCompileInputs.cache
