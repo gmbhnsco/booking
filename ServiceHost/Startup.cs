@@ -1,3 +1,4 @@
+using BookingManagement.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +29,8 @@ namespace ServiceHost
         {
 
             services.AddControllers();
+            var connectionString = Configuration.GetConnectionString("BookingDb");
+            BookingManagementBootstrapper.Configure(services, connectionString);
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ServiceHost", Version = "v1" });
