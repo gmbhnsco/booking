@@ -52,7 +52,7 @@ namespace BookingManagement.Application
 
         public EditSalesUnit GetDetails(long id)
         {
-            throw new NotImplementedException();
+            return _salesUnitsRepository.GetDetails(id);
         }
 
         public List<SalesUnitViewModel> Search(SalesUnitSearchModel searchModel)
