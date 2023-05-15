@@ -20,13 +20,15 @@ namespace BookingManagement.Infrastructure.EFCore.Repository
 
         public List<SalesUnitViewModel> GetAll()
         {
-            return _context.SalesUnits.Select(x => new SalesUnitViewModel
+            var query =  _context.SalesUnits.Select(x => new SalesUnitViewModel
             {
                 Id = x.Id,
                 Name = x.Name,
                 Country = x.Country,
-                Currency = x.Currency
-            }).Where(x => x.IsRemoved).ToList();
+                Currency = x.Currency,
+                IsRemoved=x.IsRemoved
+            });
+            return query.Where(x => !x.IsRemoved).ToList();
         }
 
         public EditSalesUnit GetDetails(long id)
