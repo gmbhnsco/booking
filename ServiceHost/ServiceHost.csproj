@@ -11,5 +11,10 @@
   <ItemGroup>
     <ProjectReference Include="..\BookingManagement.Configuration\BookingManagement.Configuration.csproj" />
   </ItemGroup>
-
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
 </Project>

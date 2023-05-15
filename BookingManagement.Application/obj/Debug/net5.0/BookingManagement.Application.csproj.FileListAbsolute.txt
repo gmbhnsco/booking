@@ -3,3 +3,17 @@ C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application\obj\Debug\n
 C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application\obj\Debug\net5.0\BookingManagement.Application.AssemblyInfoInputs.cache
 C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application\obj\Debug\net5.0\BookingManagement.Application.AssemblyInfo.cs
 C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application\obj\Debug\net5.0\BookingManagement.Application.csproj.CoreCompileInputs.cache
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application\bin\Debug\net5.0\BookingManagement.Application.deps.json
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application\bin\Debug\net5.0\BookingManagement.Application.dll
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application\bin\Debug\net5.0\ref\BookingManagement.Application.dll
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application\bin\Debug\net5.0\BookingManagement.Application.pdb
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application\bin\Debug\net5.0\0_Framework.dll
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application\bin\Debug\net5.0\BookingManagement.Application.Contract.dll
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application\bin\Debug\net5.0\BookingManagement.Domain.dll
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application\bin\Debug\net5.0\BookingManagement.Application.Contract.pdb
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application\bin\Debug\net5.0\BookingManagement.Domain.pdb
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application\bin\Debug\net5.0\0_Framework.pdb
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application\obj\Debug\net5.0\BookingManagement.Application.csproj.CopyComplete
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application\obj\Debug\net5.0\BookingManagement.Application.dll
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application\obj\Debug\net5.0\ref\BookingManagement.Application.dll
+C:\Users\saeed\source\repos\HnsProject\BookingManagement.Application\obj\Debug\net5.0\BookingManagement.Application.pdb

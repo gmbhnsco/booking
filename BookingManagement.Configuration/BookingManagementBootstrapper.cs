@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using BookingManagement.Domain.SalesUnitsAgg;
 
 namespace BookingManagement.Configuration
 {
@@ -17,7 +18,7 @@ namespace BookingManagement.Configuration
         public static void Configure(IServiceCollection services, string connectionString)
         {
             services.AddTransient<ISalesUnitApplication, SalesUnitsApplication>();
-            services.AddTransient<SalesUnitRepository, SalesUnitRepository>();
+            services.AddTransient<ISalesUnitsRepository, SalesUnitRepository>();
 
             services.AddDbContext<BookingContext>(x => x.UseSqlServer(connectionString));
         }
