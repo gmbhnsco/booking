@@ -13,7 +13,12 @@ namespace BookingManagement.Infrastructure.EFCore.Mapping
     {
         public void Configure(EntityTypeBuilder<SalesUnit> builder)
         {
-            throw new NotImplementedException();
+            builder.ToTable("SalesUnits");
+            builder.HasKey(x => x.Id);
+
+            builder.Property(x => x.Name).HasMaxLength(255).IsRequired();
+            builder.Property(x => x.Country).HasMaxLength(255).IsRequired();
+            builder.Property(x => x.Currency).HasMaxLength(255).IsRequired();
         }
     }
 }
