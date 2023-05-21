@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0_Framework", "0_Framework\0_Framework.csproj", "{C8A5D944-7DC1-4151-A783-7AE1AA3DA78A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0_Framework", "0_Framework\0_Framework.csproj", "{C8A5D944-7DC1-4151-A783-7AE1AA3DA78A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BookingMangement", "BookingMangement", "{46A37C74-0C34-4AA7-A0E7-840465A750F6}"
 EndProject
@@ -13,17 +13,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BM.Domain", "BM.Domain", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BM.Infrastructure", "BM.Infrastructure", "{2576FEB9-DCAD-46DA-8626-0EECA65925D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceHost", "ServiceHost\ServiceHost.csproj", "{8A9CFD64-258F-4E90-B959-318339AFC2DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceHost", "ServiceHost\ServiceHost.csproj", "{8A9CFD64-258F-4E90-B959-318339AFC2DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingManagement.Domain", "BookingManagement.Domain\BookingManagement.Domain.csproj", "{E4AD0DAE-30D3-42C9-A3C5-61B32383902E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingManagement.Domain", "BookingManagement.Domain\BookingManagement.Domain.csproj", "{E4AD0DAE-30D3-42C9-A3C5-61B32383902E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingManagement.Application", "BookingManagement.Application\BookingManagement.Application.csproj", "{F0450460-BBE8-45CE-BEF3-FD161BA22777}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingManagement.Application", "BookingManagement.Application\BookingManagement.Application.csproj", "{F0450460-BBE8-45CE-BEF3-FD161BA22777}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingManagement.Application.Contract", "BookingManagement.Application.Contract\BookingManagement.Application.Contract.csproj", "{DDD16191-42FF-4148-955C-E640825060DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingManagement.Application.Contract", "BookingManagement.Application.Contract\BookingManagement.Application.Contract.csproj", "{DDD16191-42FF-4148-955C-E640825060DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingManagement.Configuration", "BookingManagement.Configuration\BookingManagement.Configuration.csproj", "{42811B22-EED6-45B1-B981-42ECED90F878}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingManagement.Configuration", "BookingManagement.Configuration\BookingManagement.Configuration.csproj", "{42811B22-EED6-45B1-B981-42ECED90F878}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingManagement.Infrastructure.EFCore", "BookingManagement.Infrastructure.EFCore\BookingManagement.Infrastructure.EFCore.csproj", "{AB1EC510-0415-4876-A8A0-D4525730CB8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingManagement.Infrastructure.EFCore", "BookingManagement.Infrastructure.EFCore\BookingManagement.Infrastructure.EFCore.csproj", "{AB1EC510-0415-4876-A8A0-D4525730CB8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HnsProject.Test", "HnsProject.Test\HnsProject.Test.csproj", "{02885A55-E272-40AA-A0A5-C53F4518DFD9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{AB1EC510-0415-4876-A8A0-D4525730CB8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB1EC510-0415-4876-A8A0-D4525730CB8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB1EC510-0415-4876-A8A0-D4525730CB8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02885A55-E272-40AA-A0A5-C53F4518DFD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02885A55-E272-40AA-A0A5-C53F4518DFD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02885A55-E272-40AA-A0A5-C53F4518DFD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02885A55-E272-40AA-A0A5-C53F4518DFD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
