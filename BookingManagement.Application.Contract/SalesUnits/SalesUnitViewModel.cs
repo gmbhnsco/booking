@@ -13,5 +13,10 @@ namespace BookingManagement.Application.Contract.SalesUnits
         public string Country { get; set; }
         public string Currency { get; set; }
         public bool IsRemoved { get; set; }
+        public string ShopName { get; set; }
+        public string BookingDate { get; set; }
+        public double Prices { get; set; }
+        public string BestSellingUnitName { get; set; }
+        public double BestSellingUnitPrices { get; set; }
     }
 }
