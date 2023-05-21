@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BookingManagement.Domain.SalesUnitsAgg
 {
-    public interface ISalesUnitsRepository: IRepository<long, SalesUnit>
+    public interface ISalesUnitsRepository: IRepository<long, SalesUnits>
     {
         EditSalesUnit GetDetails(long id);
         List<SalesUnitViewModel> Search(SalesUnitSearchModel searchModel);

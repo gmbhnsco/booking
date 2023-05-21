@@ -1,4 +1,5 @@
 ﻿using _0_Framework.Domain;
+using BookingManagement.Domain.ShopsAgg;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,13 +8,15 @@ using System.Threading.Tasks;
 
 namespace BookingManagement.Domain.SalesUnitsAgg
 {
-     public class SalesUnit: EntityBase
+     public class SalesUnits: EntityBase
     {
         
         public string Name { get;private set; }
         public string Country { get; private set; }
         public string Currency { get; private set; }
-        public bool IsRemoved { get; set; }
+        public bool IsRemoved { get;set; }
+        public List<Shops> Shops { get; set; }
+        
 
         // these three property didnot want from me but
         // are nessessary in real world 
@@ -28,7 +31,7 @@ namespace BookingManagement.Domain.SalesUnitsAgg
         //public string MetaDescription { get; private set; }
         //public string Slug { get; private set; }
 
-        public SalesUnit(string name, string country, string currency)
+        public SalesUnits(string name, string country, string currency)
         {
             Name = name;
             Country = country;

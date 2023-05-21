@@ -25,7 +25,7 @@ namespace BookingManagement.Application
             {
                 operation.Failed(ApplicationMessages.DouplicatedRecord);
             }
-            var salesUnit = new SalesUnit(command.Name, command.Country, command.Currency);
+            var salesUnit = new SalesUnits(command.Name, command.Country, command.Currency);
             _salesUnitsRepository.Create(salesUnit);
             _salesUnitsRepository.SaveChanges();
             return operation.Succedded();
